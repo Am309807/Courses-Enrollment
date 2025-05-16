@@ -20,18 +20,18 @@ python manage.py createsuperuser
 6-Run the Development Server:
 python manage.py runserver
 
-6-For registration and login, it is done through the application interface supported by Django, where registration is done through:
+Registration and Login:
+1-For registration and login, it is done through the application interface supported by Django, where registration is done through:
 http://127.0.0.1:8000/api/register/
-and login can be done through a request:
+2-and login can be done through a request:
 http://127.0.0.1:8000/api/login/
-refresh user token:
+3-refresh user token:
 http://127.0.0.1:8000/token/refresh/
 
-
-7-Application interface testing:
--View all available courses:
+Application interface testing:
+1-View all available courses:
 Request type:GET  http://127.0.0.1:8000/api/courses/
--Register for a course:
+2-Register for a course:
 Request type:POST  http://127.0.0.1:8000/api/enroll
 example:
 
@@ -42,7 +42,7 @@ Body:
   "course_id": 1
 }
 
--View the courses the logged-in user has enrolled in:
+3-View the courses the logged-in user has enrolled in:
 Request type:GET http://127.0.0.1:8000/api/my-courses/
 
 Headers:

@@ -6,7 +6,7 @@ A API using Django + JWT that allows users to:
 - View the courses the user is enrolled in
 
 Setup Instructions:
-1-Clone the Projectgit clone https://github.com/Courses-Enrollment/
+1-Clone the Projectgit clone https://github.com/Am309807/Courses-Enrollment
 2-Create and Activate a Virtual Environment:
 python -m venv venv
 source venv/bin/activate

@@ -32,7 +32,7 @@ http://127.0.0.1:8000/token/refresh/
 -View all available courses:
 Request type:GET  http://127.0.0.1:8000/api/courses/
 -Register for a course:
-Request type:POST  http://127.0.0.1:8000/api/enroll/
+Request type:POST  http://127.0.0.1:8000/api/enroll
 example:
 
 Headers:

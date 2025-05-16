@@ -49,12 +49,3 @@ Headers:
   Authorization: Bearer JWT_ACCESS_TOKEN
 
 
-
-
-
-
-
-
-
-
-’ةةةة

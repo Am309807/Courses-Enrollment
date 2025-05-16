@@ -6,16 +6,18 @@ A API using Django + JWT that allows users to:
 - View the courses the user is enrolled in
 
 Setup Instructions:
-1-Clone the Projectgit clone https://github.com/YourUsername/course-enrollment-api.git
+1-Clone the Projectgit clone https://github.com/Courses-Enrollment/
 2-Create and Activate a Virtual Environment:
 python -m venv venv
 source venv/bin/activate
-3-Run Migrations:
+3-Install Dependencies:
+pip install -r requirements.txt
+4-Run Migrations:
 python manage.py makemigrations
 python manage.py migrate
-4-Create Superuser:
+5-Create Superuser:
 python manage.py createsuperuser
-5-Run the Development Server
+6-Run the Development Server:
 python manage.py runserver
 
 6-For registration and login, it is done through the application interface supported by Django, where registration is done through:
@@ -32,6 +34,7 @@ Request type:GET  http://127.0.0.1:8000/api/courses/
 -Register for a course:
 Request type:POST  http://127.0.0.1:8000/api/enroll/
 example:
+
 Headers:
   Authorization: Bearer JWT_ACCESS_TOKEN
 Body:
@@ -41,6 +44,7 @@ Body:
 
 -View the courses the logged-in user has enrolled in:
 Request type:GET http://127.0.0.1:8000/api/my-courses/
+
 Headers:
   Authorization: Bearer JWT_ACCESS_TOKEN
 
